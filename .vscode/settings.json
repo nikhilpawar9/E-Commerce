@@ -1,0 +1,24 @@
+{
+    "files.autoSave": "afterDelay",
+    "prettier.disableLanguages": [
+        "django-html",
+        "html"
+    ],
+
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/*/*.html": "django-html",
+        "**/templates/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    },
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "beautify.language": {
+        "html": [
+            "htm",
+            "html",
+            "django-html"
+        ]
+    },
+}
