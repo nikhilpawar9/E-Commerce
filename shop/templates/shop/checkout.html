@@ -9,7 +9,7 @@
         <h2>Step 1 - My Awesome Cart Express Checkout - Review Your Cart Items</h2>
         <div>
             <ul class="list-group my-4" id="items">
-                
+
             </ul>
         </div>
     </div>
@@ -62,21 +62,30 @@
 <script>
     if (localStorage.getItem('cart') == null) {
         var cart = {};
-    } 
-    else {
+    } else {
         cart = JSON.parse(localStorage.getItem('cart'));
     };
     console.log(cart);
-    for (item in cart) {
-        let name = cart[item][1];
-        let qty = cart[item][0];
-        mystr = `<li class="list-group-item d-flex justify-content-between align-items-center">
+    var sum = 0;
+    if ($.isEmptyObject(cart)) {
+        //if cart is empty
+        mystr = `Your cart is empty`;
+        $('#items').append(mystr);
+
+    } else {
+        for (item in cart) {
+            let name = cart[item][1];
+            let qty = cart[item][0];
+            sum = sum + qty;
+            mystr = `<li class="list-group-item d-flex justify-content-between align-items-center">
                     ${name}
                     <span class="badge badge-primary badge-pill">${qty}</span>
                 </li>`
 
-        $('#items').append(mystr);
+            $('#items').append(mystr);
 
-    };
+        };
+    }
+    document.getElementById('cart').innerHTML = sum;
 </script>
 {% endblock %}
