@@ -9,9 +9,8 @@
             </ul>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mt-3">
-                    <li class="breadcrumb-item active" aria-current="page">Your Cart Total Is 
-                    <b>Rs.<span id="totalPrice"></b> </span>
-                    Enter your details below & place your order. Thanks for
+                    <li class="breadcrumb-item active" aria-current="page">Your Cart Total Is <b>Rs.<span
+                                id="totalPrice"></b> </span>Enter your details below & place your order. Thanks for
                         using My Awesome Cart!</li>
                 </ol>
             </nav>
@@ -91,13 +90,11 @@
                     <span class="badge badge-primary badge-pill">${qty}</span>
                 </li>`
             $('#items').append(mystr);
-
         }
-        document.getElementById('totalPrice').innerHTML = totalPrice;
-
     }
 
     document.getElementById('cart').innerHTML = sum;
+    document.getElementById('totalPrice').innerHTML = totalPrice;
     $('#itemsJson').val(JSON.stringify(cart));
     {% if thank %}
     alert('Thanks for ordering with us. Your order is is {{id}}. Use it to track your order using our order tracker');
