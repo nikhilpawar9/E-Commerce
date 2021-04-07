@@ -2,7 +2,7 @@ from django.db import models
 
 class Product(models.Model):
     product_id=models.AutoField
-    product_name=models.CharField(max_length=50)
+    product_name=models.CharField(max_length=55)
     category= models.CharField(max_length=50, default="")
     sub_category= models.CharField(max_length=50, default="")
     price=models.IntegerField(default=0)
