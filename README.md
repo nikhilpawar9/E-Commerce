@@ -9,7 +9,7 @@ Django based e-commerce website
 
 ## General info
 It's an E-commerce website (Frontend:-Bootstrap, Backend:- Django)
-Project is live at http://nikhil981.pythonanywhere.com/
+* Project is live at http://nikhil981.pythonanywhere.com/
 	
 ## Technologies
 Project is created with:
