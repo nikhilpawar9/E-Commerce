@@ -15,13 +15,13 @@ It's an E-commerce website (Frontend:-Bootstrap, Backend:- Django)
 Project is created with:
 * Python version: 3.9.1
 * Bootstrap
-* JavaScripts
+* JavaScript
 
 	
 ## Setup
 Clone the project 
 ```
-$ git clone  https://github.com/Vaibhav-84/Vcart.git 
+$ git clone  https://github.com/nikhilpawar9/E-Commerce
 ```
 To run the code on your computer
 
